@@ -60,4 +60,108 @@ Report นางสาวศศิธร เกิดทอง 6352300146
 
 สิ่งที่ได้จาก week 1
 ได้เข้าใจการเขียนhtmlมากขึ้น จากตอนแรกที่เคยใช้จากการฝึกงาน เมื่อได้เรียนเข้าใจการทำงานมากขึ้น
-เข้าใจการทำงานของhtmlมากขึ้น วิธีการใช้งาน 
+เข้าใจการทำงานของhtmlมากขึ้น วิธีการใช้งาน
+
+
+
+สัปดาห์ที่2 : 19/09/65-25/09/65
+วันอาทิตย์ : ทวนบทที่ได้เรียน พร้อมทำการบ้าน
+โดยทำให้ Work Experience เป็นตารางทำให้งานต่อการดูและสวยงาม ทำให้รู้จักการใช้ตาราง วิธีการเรียกใช้ตาราง จะสร้างตารางในแต่ละส่วนต้องใช้คำสั่งอะไร
+<h3>Work Experience</h3>
+<table border="3"> //ประกาศตาราง
+  <thead> //หัวตาราง
+    <tr>//แถวตาราง
+      <th>Year</th>//มีดาต้าในหัวตาราง จะเป็นตัวหนา
+      <th>Work place</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>Jun 2022 - Aug 2022</td> //ดาต้าในตาราง
+    <td>7-11</td>
+  </tr>
+  <tr>
+    <td>Dec 2021 - May 2022</td>
+    <td>MFEC</td>
+  </tr>
+</table>
+
+skills ทำเป็นตาราง
+<table >
+  <tr>
+    <td> java</td>
+    <td> ✨✨✨</td> // สามารถใส่เป็นอิโมจิได้
+
+    <td> Thai </td>
+    <td> ✨✨✨✨✨</td>
+  </tr>
+  <tr>
+    <td>C#</td>
+    <td>✨✨✨</td>
+
+    <td>English</td>
+    <td>✨✨✨</td>
+
+  </tr>
+
+  <tr>
+    <td>Python</td>
+    <td>✨✨✨</td>
+  </tr>
+
+  <tr>
+    <td>Angular</td>
+    <td>✨✨✨</td>
+  </tr>
+
+  <tr>
+    <td>SQL</td>
+    <td>✨✨✨</td>
+  </tr>
+</table>
+
+นำความรู้ของตารางมาหน้าเว็บมห้สวยงามมากขึ้น  จัดให้รูปกับชื่ออยู่ในrowเดียวกัน
+<table cellspacing = "20">
+  <tr>
+    <td><img src="profile1.png" alt="Sasithon Koetthong"></td>
+    <td>
+      <h1><em>Sasithon Koetthong</em></h1>
+      <strong><p><a href="https://www.pim.ac.th">Panyapiwan Institute of Management</a></p>
+      <p>Bachelor of Engineering(Computer Engineering and Artificial)	</p></strong>
+    </td>
+  </tr>
+</table>
+
+การinputของข้อมูล จะใช้form
+ในform จะมีคำสั่ง ทั้งinput คือ ช่องว่างที่ให้ใส่ดาต้า สามารถกำหนดtypeได้ ทั้ง text,emall,password
+label เป็นการแสดงความ
+
+<form class="" action="mailto:sasithon.koetthong@gmail.com" method="post" enctype="text/plain"> // ฟอร์มมีaction ให้ส่งไปที่เมลตวามที่กำหนด
+  <label>Name:</label> //แสดงข้อความว่า Name:
+  <input type="text" name="name_surname" value=""><br>//input รับข้อมูลโดยมีtypeเป็นtext
+  <label>E-mail:</label>
+  <input type="email" name="email" value=""><br>
+  <label>ข้อความที่ต้องการส่ง:</label><br>
+  <textarea name="message" rows="8" cols="80"></textarea><br> //textarea จะเป็นพื้นที่ให้ใส่ข้อมูล คล้ายinput แต่สามารถกำหนดมีแถว หลัก มีtypeเป็น message
+  <input type="submit" name="" >
+</form>
+
+
+
+การใช้งาน css ในการจัดตกแต่ง ออกแบบ ให้สวยงาม ทั้งรูปแบบinline css(ใช้cssในแต่ละแถว)หรือinternal css(สร้างselectขึ้นมาก แล้วสามารถใช้ได้หลายๆตัว ที่ต้องพิมพ์บ่อย)
+<style> // จ้องใส่ไว้ใน <head></head>
+
+  body{
+    background-color:#EEE3CB; //backgroundของเว็บเป็นที่ตามที่กำหนด
+
+  hr{ //กำหนดค่าต่างๆของเส้นได้
+    border-style: dotted none none; //เป็นจุด
+    width: 30%; //กำหนดความกว้าง
+    border-color: gray;//กำหนดสีของขอบเส้น
+    border-width: 5px;//กำหนดความกว้างของขอบเส้น
+
+  }
+  img{//กำหนดค่าของรูป
+    height: 150px;//ความสูง
+    width: 150px://ความกว้าง
+  }
+</style>
