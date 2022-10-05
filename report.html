@@ -1,6 +1,6 @@
 Report นางสาวศศิธร เกิดทอง 6352300146
-สัปดาห์ที่1 : 12/09/65-18/09/65
 
+สัปดาห์ที่1 : 12/09/65-18/09/65
 วันเสาร์ : ได้ทำ ไฟล์ index.html , contact.html
 //file index.html
 <html>
@@ -62,10 +62,11 @@ Report นางสาวศศิธร เกิดทอง 6352300146
 ได้เข้าใจการเขียนhtmlมากขึ้น จากตอนแรกที่เคยใช้จากการฝึกงาน เมื่อได้เรียนเข้าใจการทำงานมากขึ้น
 เข้าใจการทำงานของhtmlมากขึ้น วิธีการใช้งาน
 
-
+//---------------------------------------------------------------------
 
 สัปดาห์ที่2 : 19/09/65-25/09/65
 วันอาทิตย์ : ทวนบทที่ได้เรียน พร้อมทำการบ้าน
+วันอังคาร : ทำ report
 โดยทำให้ Work Experience เป็นตารางทำให้งานต่อการดูและสวยงาม ทำให้รู้จักการใช้ตาราง วิธีการเรียกใช้ตาราง จะสร้างตารางในแต่ละส่วนต้องใช้คำสั่งอะไร
 <h3>Work Experience</h3>
 <table border="3"> //ประกาศตาราง
@@ -165,3 +166,151 @@ label เป็นการแสดงความ
     width: 150px://ความกว้าง
   }
 </style>
+
+//-----------------------------------------------------------------------------------------
+
+สัปดาห์ที่3 : 26/09/65-6/10/65
+วันอาทิตย์ : ทวนบทที่ได้เรียน พร้อมทำการบ้าน
+ได้เรียนรู้การทำcss ออกแบบstyle
+ - 1. เรียนรู้ css syntax มีส่วนประกอบอะไรบ้าง
+ ชื่อไฟล์ .css
+ selector{ property:value;}
+
+ ชื่อที่ตรงกับselector จะมีstyle ตามที่กำหนดในsyntex
+ตัวอย่าง
+body{
+  background-color:#F9F5EB;
+} // กำหนดให้ body มีพื้นหลังเป็นส ี#F9F5EB
+
+***** การจะลิงค์ให้ css เชื่อมกับ html ได้ต้องประกาศ ******
+เขียนใน <head></head>
+<head>
+  <link rel="stylesheet" href="/css/ชื่อไฟล์.css">
+</head>
+
+
+- 2. class selectors
+.ชื่อclass selectors { property:value; }
+ต้องมี .ชื่อ
+
+เช่น style.css
+.bacon{
+  background-color: red;
+} //กำหนดclass selectors ที่ชื่อว่า bacon มีพื้นหลังสีแดง
+
+index.html
+<img class="bacon"src="https://emojipedia-us.s3.amazonaws.com/thumbs/240/apple/118/bacon_1f953.png" alt="bacon-img">
+ จะเห็นว่า img มีการเรียกใช้ class="bacon" ทำให้ imรูปนี้มีพื้นหลังสีแดง
+
+  - 3. ID seclectors
+syntex css
+#ชื่อID{property:value;}
+ ID seclectors คล้ายกับ class selectors
+  ID seclectors ใน 1 pageใช้ได้แค่ทีเดียว แต่class selectors ใช้ได้กับทุกpage
+
+ css pseudo-class //จะอยู่ต่อจาก "seclector : css pseudo-class"
+ img:hover{ // เมื่อเม้าไปชี้ที่img พื้นหลังจะเปลี่ยนสีเป็นสีแดง
+   background-color: gold;
+ }
+
+   -4. การสร้างicon on our page
+   icon fileจะมีนามสกุลเป็น .ico
+โดนจะใช้โค๊ด เขียนใน<head>
+  <link rel="icon" href="ชือ่ไฟล์.ico">
+</head>
+html divs คือ   tag ใน html เอาไว้แบ่งเป็นboxเพื่อให้ง่ายต่อการออกแบบ สร้างในbody
+<body>
+  <div class="">
+    <h1>Hello</h1>
+    <h3>I am Tan</h3>
+  </div>
+  <!--  Hello
+  I am Tan   จะอยู่ใน div -->
+</body>
+
+ใน css สามารถกำหนดstyleขอ divได้
+โดย ใช้
+div{
+  property:value;
+}
+
+******code Homework******
+index.html
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SasithonK</title>
+    <link rel="icon" href="favicon.ico"> //การสร้างicon on our page
+    <link rel="stylesheet" href="css\style.css"> // เชื่อมกับ css file
+  </head>
+  <body>
+    <div class="">
+      <img src="images\cloud.png" alt="">
+      <h1>Sasithon Koetthong</h1>
+      <h3>Panyapiwan Institute of Management</h3>
+      <img src="images\cloud.png" alt="">
+      <img src="images\mountain.png" alt="">
+      <!-- รูปและh1 h3 จะอยู่ใน div class="" -->
+    </div>
+
+    <div class="ex">
+      hello world, hello world, hello world, hello world,hello world, hello world,hello world,
+      hello world, hello world, hello world, hello world,hello world, hello world,hello world,
+      hello world, hello world, hello world, hello world,hello world, hello world,hello world,
+      hello world, hello world, hello world, hello world,hello world, hello world,hello world,
+      hello world, hello world, hello world, hello world,hello world, hello world,hello world,
+      hello world, hello world, hello world, hello world,hello world, hello world,hello world,
+      hello world, hello world, hello world, hello world,hello world, hello world,hello world,
+    <!-- คำว่า hello world, hello world,hello world  จะอยู่ใน div class="ex" -->
+    </div>
+
+    <div class="middle-container">
+  <!-- เป็น div class="middle-container"-->
+    </div>
+
+    <div class="bottom-container">
+
+    </div>
+  </body>
+</html>
+
+
+style.css
+body{
+  margin : 0px; ที่bodyกำหนด ทุกด้านของ margin มีค่าเท่ากับ 0px
+  /* margin-top: 0px;
+  margin-right: 0px; */
+}
+
+
+div{
+  /* height: 300px; */
+  background-color: #607EAA;
+  <!-- กำหนดให้ div มีพื้นหลัง สี #607EAA  -->
+}
+
+h1{
+  margin-top: 0px; ที่h1กำหนด ด้านบนของ margin มีค่าเท่ากับ 0px
+}
+
+.ex{
+  height: 300px; //สูง300px
+  width: 300px; //กว้าง300px
+  background-color: pink; //พื้นหลังสีชมพู
+  border: solid; // ขอบเป็นแบบsolid
+  border-width: 50px; //ขอบกว้าง 50 px
+  border-top: 0px; //ขอบด้านบน 0 px
+  padding: 50px; //ให้paddingกว้าง  px คือถ้ามีข้อความ ข้อความจะไม่ติดกับขอบ เพราะว่า มีpaddind 50 px
+  margin: 10px; //ที่ class= "ex" กำหนด ทุกด้านของ margin มีค่าเท่ากับ 10px
+}
+.middle-container{
+  height: 200px; //สูง200px
+  width: 200px;//กว้าง200px
+  background-color: blue;//พื้นหลังสีฟ้า
+}
+.bottom-container{
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}
